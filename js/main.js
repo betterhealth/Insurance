@@ -98,7 +98,7 @@
     };
 
     var $form = $('form#test-form'),
-    url = 'https://script.google.com/macros/s/AKfycbwf-u6tvcgxIEZsuYfLS-mebNCAVt3zgVHAWS8GWzjEjFCkfpCd/exec'
+    url = 'https://script.google.com/macros/s/AKfycbxluB8VsNFP7GuDTcviqJi2q75J3Fdhu6_f9546U-7Jle6b6GTx/exec'
 
 
 
