@@ -106,7 +106,7 @@ a:active {
  * # typography & general theme styles
  * 
  * ------------------------------------------------------------------- */
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+h1, h2, h3, h4, h5, h6, h7, .h1, .h2, .h3, .h4, .h5, .h6, .h7{
   font-family: "metropolis-semibold", sans-serif;
   color: #000000;
   font-style: normal;
@@ -126,13 +126,13 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 
 }
 
-h5, .h5, h6, .h6 {
+h5, .h5, h6, .h6, h7, .h7 {
   margin-top: 4.2rem;
   margin-bottom: 1.5rem;
 }
 
 @media only screen and (max-width:600px) {
-  h5, .h5, h6, .h6 {
+  h5, .h5, h6, .h6, h7, .h7 {
     margin-top: 3.6rem;
     margin-bottom: 0.9rem;
   }
@@ -178,6 +178,15 @@ h6, .h6 {
   line-height: 1.286;
   text-transform: uppercase;
   letter-spacing: 0.16rem;
+}
+
+h7, .h7 {
+  line-height: 1.286;
+  letter-spacing: normal;
+  font-family: "metropolis-regular", sans-serif;
+  margin-bottom: 0rem;
+  padding: 0rem;
+  margin-top: 0rem;
 }
 
 p img {
@@ -496,11 +505,26 @@ p,
 ul,
 ol,
 dl,
-form,
+form
 .video-container,
 .cl-custom-select {
   margin-bottom: 3rem;
 }
+
+input {
+  margin-bottom: 0rem;
+  margin-top: 1rem;
+}
+
+.fullname,
+.email,
+.lastcheckbox,
+.additionalcomments {
+  margin-bottom: 3rem;
+  margin-top: 0rem;
+}
+
+
 
 /* ------------------------------------------------------------------- 
  * ## pace.js styles - minimal
@@ -685,6 +709,11 @@ input[type=submit]:hover {
     width: 100%;
     margin-top: 0;
   }
+}
+
+form {
+  padding: 0;
+  line-height: 0rem;
 }
 
 textarea,
@@ -1076,10 +1105,10 @@ input::-moz-focus-inner {
  * markup:
  *
  * <aside class="pull-quote">
- *		<blockquote>
- *			<p></p>
- *		</blockquote>
- *	</aside>
+ *    <blockquote>
+ *      <p></p>
+ *    </blockquote>
+ *  </aside>
  *
  * --------------------------------------------------------------------- */
 .pull-quote {
@@ -1117,8 +1146,8 @@ input::-moz-focus-inner {
  * markup:
  *
  * <ul class="stats-tabs">
- *		<li><a href="#">[value]<em>[name]</em></a></li>
- *	</ul>
+ *    <li><a href="#">[value]<em>[name]</em></a></li>
+ *  </ul>
  *
  * Extend this object into your markup.
  *

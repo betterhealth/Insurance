@@ -112,7 +112,7 @@
             success: function() {
                 $('#test-form').html("<div id='message'></div>");
                 $('#message').html("<h2>Thank you for your interest!</h2>")
-                .append("<p>We will be in touch soon.</p>")
+                .append("<h7>We will be in touch soon.</h7>")
                 .hide()
                 .fadeIn(1500, function() {
                 $('#message');
